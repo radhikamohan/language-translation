@@ -12416,10 +12416,6 @@ Default GPU Device: /gpu:0
     <span class="n">inference_helper</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">seq2seq</span><span class="o">.</span><span class="n">GreedyEmbeddingHelper</span><span class="p">(</span><span class="n">dec_embeddings</span><span class="p">,</span>
                                                                 <span class="n">start_tokens</span><span class="p">,</span>
                                                                 <span class="n">end_of_sequence_id</span><span class="p">)</span>
-    
-    <span class="c1">#dec_infer_dropout_wrapper = tf.contrib.rnn.DropoutWrapper(dec_cell, output_keep_prob=keep_prob)</span>
-
-
 
     <span class="n">inference_decoder</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">seq2seq</span><span class="o">.</span><span class="n">BasicDecoder</span><span class="p">(</span><span class="n">dec_cell</span><span class="p">,</span>
                                                         <span class="n">inference_helper</span><span class="p">,</span>
